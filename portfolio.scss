@@ -1,0 +1,346 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.first{
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url('photo/habibur-rhaman.jpg');
+}
+.nav{
+    height:10vh;
+    background:rgb(23, 23, 216);
+    display:flex;
+    .logo{
+        flex-grow: 1;
+        line-height: 10vh;
+        font-size: 30px;
+        margin-left: 3%;
+        color:white;
+        text-transform: capitalize;
+    }
+    ul{
+        display: flex;
+        .dropdown-container{
+            color:white;
+            font-size: 25px;
+            line-height: 10vh;
+            text-align:center;
+            cursor: pointer;
+           li{
+               p{
+                   padding:0px 5px 0px 5px;
+               }
+           }
+            &:hover .dropdown-content{
+                display: block;
+
+            }
+            .dropdown-content{
+                background: black;
+                display:none;
+                position: relative;
+                right:10px;
+                
+                li{
+                    text-align:center;
+                    width:100%;
+                    a{
+                        width:100%;
+                        display: inline-block;
+                    }
+                    
+                }
+            }
+        }
+        li{
+            list-style-type: none;
+            .active{
+                display: inline-block;
+                background: rgb(151, 117, 230);
+            }
+            
+            a{
+                text-decoration: none;
+                color:white;
+                padding: 0 20px;
+                font-size: 25px;
+                line-height: 10vh;
+                text-transform: capitalize;
+                
+                i{
+                    padding: 5px;
+                }
+                &:hover{
+                    background: rgb(140, 134, 230);
+                    display: inline-block;
+                }
+            }
+        }
+    
+    }
+    .icn{
+        line-height: 12vh;
+        display: none;
+        cursor: pointer;
+        margin-right: 2%;
+    }
+}
+#home{
+    background: linear-gradient(160deg,rgba(29, 60, 73, 0.5),rgba(0, 0, 255, 0.5));
+height: 70vh;
+h5{
+    background: white;
+    font-size: 1.3rem;
+    width:80px;
+    letter-spacing: 2px;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+}
+.cont{
+width:500px;
+padding: 10px;
+position: absolute;
+top: 20%;
+left:20%;
+P{
+    b{
+    text-transform:capitalize ;
+    font-size:3rem;
+    color:black;
+    text-shadow: none;
+    }
+    font-size: 2.8rem;
+    margin-top: 20px;
+    color:white;
+    text-shadow: 4px 3px 3px black;
+}
+.i{
+    color:white;
+    margin-top:10px;
+    font-size: 1.5rem;
+
+}
+}
+#skill{
+text-align: center;
+align-items: center;
+h1{
+    margin-top: 10px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+p{
+    padding: 5px;
+    text-transform: capitalize;
+}
+.cont-skill{
+display: flex;
+width:70vw;
+margin:0 auto;
+height: 35vh;
+align-items: center;
+
+
+.skl{
+    height: 200px;
+    background: rgb(215, 223, 223);
+    margin:15px 0px 0px 15px; 
+    border-radius: 10px;
+    text-align: center;
+    flex-grow: 1;
+    box-shadow: 3px 4px 4px black;
+    .cnt{
+        margin-top: 10%;
+        .h{
+            height: 10px;
+            width:80%;
+            background: white;
+            margin:0 auto;
+            border-radius: 5px;
+            &::before{
+                content: '';
+                width: 90%;
+            }
+        }
+    }
+   
+}
+}}
+#education{
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    height:800px;
+    h3{
+    margin-top: 10px;
+    font-size: 40px;
+    text-transform: capitalize;
+    }
+    p{
+        padding: 5px;
+        text-transform: capitalize;
+    }
+  .tab{
+      width:60vw;
+      margin: 0 auto;
+      text-align: left;
+      background: rgb(228, 227, 219);
+      h1{
+          margin-left: 45%;
+          padding:10px;
+          text-transform: uppercase;
+      }
+      p{
+          font-size: large;
+          margin-left: 25%;
+          padding: 0px 0px 10px 0px;
+      }
+      i{
+          margin-left: 43%;
+          font-size: 30px;
+          padding-bottom:10px;
+      }
+  }
+  .brt{
+      border-radius:20px 20px 0px 0px;
+  }
+  .brb{
+      border-radius:0px 0px 20px 20px;
+  }
+}
+#aboutm{
+    h2{
+        text-align: center;
+        font-size: 40px;
+    }
+    .conte{
+        background: green;
+        height: 100%;
+        width:90%;
+        padding:15px;
+        margin:0 auto;
+        text-transform: capitalize;
+        color:white;
+        border-radius: 15px;
+       
+        h6{
+            margin-top: 18px;
+            font-size: 16px;
+            b{
+                font-size:25px;
+                color:blue;
+            }
+        }
+        p{
+            font-size: 18px;
+            margin-top: 15px;  
+            word-spacing: 2px;
+            text-shadow: none;
+            a{
+                text-decoration: none;
+                color:red;
+            }
+         }
+    }
+
+}
+#footer{
+    height: 80px;
+    background: black;
+    color:white;
+    margin-top: 10px;
+    p{
+        text-align: center;
+        line-height: 80px;
+    }
+}
+@media screen and (max-width:660px){
+    .nav{
+        width:100%;
+        .logo{
+            margin-left: 5%;
+            color:white;
+        }
+        .icn{
+            display: inline-block;
+            
+        }
+        .green{
+            display: block;
+            background: black;
+            height: auto;
+            position: absolute;
+            top:10vh;
+            z-index: 34;
+            transition: 3s linear;
+            width:100%;
+            text-align: center;
+            .dropdown-container{
+               li{
+                   p{
+                    width:100vw;
+                   }
+               }
+                height:65px;
+                line-height: 65px;
+                border-bottom: 1px solid rgb(29, 27, 27);
+                .dropdown-content{
+                    background: green;
+                }
+            }
+            li{
+                a{
+                    width: 100%;
+                    display: inline-block;
+                    border-bottom: 1px solid rgb(29, 27, 27);
+                    &:hover{
+                        background: rgb(75, 73, 78);
+                    }
+                }
+            }
+         
+        }
+        .toggle{
+            display:none;
+        }
+    }
+    #skill{
+        .cont-skill{
+            height:750px;
+
+            display: inline-block;
+            .skl{
+                .cnt{
+                    padding:30px;                    
+                }
+            }
+        }
+    }
+    #education{
+        .tab{
+            width: 70%;
+            margin:0 auto;
+            p{
+                margin-left: 8%;
+            }
+        }
+        .brt{
+            border-radius: 20px 20px 0px 0px;
+        }
+        .brb{
+            border-radius: 0px 0px 20px 20px;
+        }
+    }
+    #aboutm{
+        height:360px;
+        .conte{
+            height:300px;
+        }
+    }
+}
+    

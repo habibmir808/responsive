@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.first {
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url("photo/habibur-rhaman.jpg");
+}
+
+.nav {
+  height: 10vh;
+  background: #1717d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .logo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  line-height: 10vh;
+  font-size: 30px;
+  margin-left: 3%;
+  color: white;
+  text-transform: capitalize;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav ul .dropdown-container {
+  color: white;
+  font-size: 25px;
+  line-height: 10vh;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav ul .dropdown-container li p {
+  padding: 0px 5px 0px 5px;
+}
+
+.nav ul .dropdown-container:hover .dropdown-content {
+  display: block;
+}
+
+.nav ul .dropdown-container .dropdown-content {
+  background: black;
+  display: none;
+  position: relative;
+  right: 10px;
+}
+
+.nav ul .dropdown-container .dropdown-content li {
+  text-align: center;
+  width: 100%;
+}
+
+.nav ul .dropdown-container .dropdown-content li a {
+  width: 100%;
+  display: inline-block;
+}
+
+.nav ul li {
+  list-style-type: none;
+}
+
+.nav ul li .active {
+  display: inline-block;
+  background: #9775e6;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0 20px;
+  font-size: 25px;
+  line-height: 10vh;
+  text-transform: capitalize;
+}
+
+.nav ul li a i {
+  padding: 5px;
+}
+
+.nav ul li a:hover {
+  background: #8c86e6;
+  display: inline-block;
+}
+
+.nav .icn {
+  line-height: 12vh;
+  display: none;
+  cursor: pointer;
+  margin-right: 2%;
+}
+
+#home {
+  background: linear-gradient(160deg, rgba(29, 60, 73, 0.5), rgba(0, 0, 255, 0.5));
+  height: 70vh;
+}
+
+#home h5 {
+  background: white;
+  font-size: 1.3rem;
+  width: 80px;
+  letter-spacing: 2px;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.cont {
+  width: 500px;
+  padding: 10px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+.cont P {
+  font-size: 2.8rem;
+  margin-top: 20px;
+  color: white;
+  text-shadow: 4px 3px 3px black;
+}
+
+.cont P b {
+  text-transform: capitalize;
+  font-size: 3rem;
+  color: black;
+  text-shadow: none;
+}
+
+.cont .i {
+  color: white;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+#skill {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skill h1 {
+  margin-top: 10px;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+#skill p {
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+#skill .cont-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70vw;
+  margin: 0 auto;
+  height: 35vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#skill .cont-skill .skl {
+  height: 200px;
+  background: #d7dfdf;
+  margin: 15px 0px 0px 15px;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-shadow: 3px 4px 4px black;
+          box-shadow: 3px 4px 4px black;
+}
+
+#skill .cont-skill .skl .cnt {
+  margin-top: 10%;
+}
+
+#skill .cont-skill .skl .cnt .h {
+  height: 10px;
+  width: 80%;
+  background: white;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#skill .cont-skill .skl .cnt .h::before {
+  content: '';
+  width: 90%;
+}
+
+#education {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  height: 800px;
+}
+
+#education h3 {
+  margin-top: 10px;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+#education p {
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+#education .tab {
+  width: 60vw;
+  margin: 0 auto;
+  text-align: left;
+  background: #e4e3db;
+}
+
+#education .tab h1 {
+  margin-left: 45%;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+#education .tab p {
+  font-size: large;
+  margin-left: 25%;
+  padding: 0px 0px 10px 0px;
+}
+
+#education .tab i {
+  margin-left: 43%;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+#education .brt {
+  border-radius: 20px 20px 0px 0px;
+}
+
+#education .brb {
+  border-radius: 0px 0px 20px 20px;
+}
+
+#aboutm h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+#aboutm .conte {
+  background: green;
+  height: 100%;
+  width: 90%;
+  padding: 15px;
+  margin: 0 auto;
+  text-transform: capitalize;
+  color: white;
+  border-radius: 15px;
+}
+
+#aboutm .conte h6 {
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+#aboutm .conte h6 b {
+  font-size: 25px;
+  color: blue;
+}
+
+#aboutm .conte p {
+  font-size: 18px;
+  margin-top: 15px;
+  word-spacing: 2px;
+  text-shadow: none;
+}
+
+#aboutm .conte p a {
+  text-decoration: none;
+  color: red;
+}
+
+#footer {
+  height: 80px;
+  background: black;
+  color: white;
+  margin-top: 10px;
+}
+
+#footer p {
+  text-align: center;
+  line-height: 80px;
+}
+
+@media screen and (max-width: 660px) {
+  .nav {
+    width: 100%;
+  }
+  .nav .logo {
+    margin-left: 5%;
+    color: white;
+  }
+  .nav .icn {
+    display: inline-block;
+  }
+  .nav .green {
+    display: block;
+    background: black;
+    height: auto;
+    position: absolute;
+    top: 10vh;
+    z-index: 34;
+    -webkit-transition: 3s linear;
+    transition: 3s linear;
+    width: 100%;
+    text-align: center;
+  }
+  .nav .green .dropdown-container {
+    height: 65px;
+    line-height: 65px;
+    border-bottom: 1px solid #1d1b1b;
+  }
+  .nav .green .dropdown-container li p {
+    width: 100vw;
+  }
+  .nav .green .dropdown-container .dropdown-content {
+    background: green;
+  }
+  .nav .green li a {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #1d1b1b;
+  }
+  .nav .green li a:hover {
+    background: #4b494e;
+  }
+  .nav .toggle {
+    display: none;
+  }
+  #skill .cont-skill {
+    height: 750px;
+    display: inline-block;
+  }
+  #skill .cont-skill .skl .cnt {
+    padding: 30px;
+  }
+  #education .tab {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #education .tab p {
+    margin-left: 8%;
+  }
+  #education .brt {
+    border-radius: 20px 20px 0px 0px;
+  }
+  #education .brb {
+    border-radius: 0px 0px 20px 20px;
+  }
+  #aboutm {
+    height: 360px;
+  }
+  #aboutm .conte {
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */
